@@ -1,8 +1,25 @@
 aid: ctrip
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ctrip.png
 name: Ctrip
-description: 'Ctrip is a company surfaced as a portfolio company of idg-capital and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer-technology. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Ctrip (Ctrip.com International / Trip.com Group, NASDAQ: TCOM) is one of the world''s largest
+  online travel agencies, founded in 1999 and headquartered in Shanghai, China. Its consumer platform sells
+  hotels, flights, train tickets, car rentals, tours, cruises, and travel packages across China and internationally,
+  and the broader Trip.com Group also operates the Trip.com, Qunar, and Skyscanner brands. Ctrip exposes partner
+  and B2B travel-distribution capabilities through the Ctrip Open Platform (openapi.ctrip.com), the Trip.com
+  Group open platform (connect.trip.com), and a corporate-travel developer platform (ctripbiz). These developer
+  surfaces are partner-gated and largely account-restricted; no public OpenAPI or first-party SDK has been
+  discovered for this profile.'
 url: https://raw.githubusercontent.com/api-evangelist/ctrip/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Consumer Technology
+- Travel
+- Online Travel Agency
+- Hotels
+- Flights
+- Trip.com Group
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ctrip-domain-security.yml
 - type: Website
   url: https://ctrip.com/
+- type: DeveloperPortal
+  name: Ctrip Open Platform
+  url: https://openapi.ctrip.com/
+- type: Documentation
+  name: Trip.com Group Open Platform Documentation
+  url: https://connect.trip.com/doc/trip
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
